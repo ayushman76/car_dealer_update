@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif!important;
+}
+
+
+        
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 23px!important;
+    font-size: 30px!important
+}
+
+header {
+       backdrop-filter: blur(10px);
+    background: rgb(122 132 46 / 0%);
+}
+
+.logo {
+    width: 79px!important;
+    padding: 10px;
+   
+}
+
+nav {
+    box-shadow: 15px 18px 13px 4px #8080800a;
+	 
+	     background: rgb(122 43 52 / 48%);
+    backdrop-filter: blur(9px);
+
+}
+
+.navigation>ul>li>a,
+.widgets>ul>li>a {
+    color: white!important;
+}
+
+section {
+    padding: 226px 10px;
+}
+
+#main {
+    color: white;
+    background-image: url(..//image/Traffic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pad,
+.nav,
+.widget,
+article,.my_list>ul>li>a{
+    padding: 10px!important;
+}
+
+img {
+    width: 100%!important;
+}
+
+.my_content {
+    position: absolute;
+    top: -178px;
+}
+
+
+
+.my_btn {
+    padding: 10px;
+   background: rgb(1 0 5);
+    color: rgb(255 255 255);
+    border-radius: 6px;
+    font-size: 20px;
+    position: relative;
+    left: 16px;
+}
+
+.my_service {
+    background: rgb(255 255 255);
+    box-shadow: 3px 5px 56px 1px #80808017;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.my_service>img {
+    height: 60px;
+    width: 80px!important;
+}
+
+.my_products {
+      padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 56px 1px #80808017;
+    margin: 10px 0px;
+    position: relative;
+    z-index: 999999999;
+}
+
+.my_list{
+	display:none;
+}
+.my_content>p {
+    font-size: 20px;
+    padding: 18px;
+}
+
+.more {
+
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    padding: 10px;
+  background: rgb(1 0 5);
+    color: rgb(255 255 255);
+    bottom: 0;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 22px;
+}
+.mycar_data{
+	transform: rotate3d(1, 1, 1, 360deg);
+  position: fixed;
+    top: 0px;
+   background: rgb(1 0 5);
+    width: 100%;
+    padding: 10px;
+    display: none;
+    z-index: 9999999999999999;
+    margin: 0 auto;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    color: rgb(255 255 255);
+	 transition: 0.6s;
+
+}
+
+.mycar_data {
+ 
+
+  animation-name: example;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;  
+}
+
+@keyframes example {
+  0%   {transform: rotate3d(1, 1, 1, 0deg); left:0px; top:200px;}
+  
+  75%  {transform: rotate3d(1, 1, 1, 360deg);  left:0px; top:0px;}
+  
+}
+.cut {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 36px;
+    padding: 10px;
+    border: 1px solid rgb(0 0 0);
+    border-radius: 9px;
+}
+article{
+	padding: 54px 0px 0px 0px!important;
+}
+.my_products:hover{
+	    box-shadow: 44px 5px 62px 9px #8080804a;
+		transition:0.5s;
+}
+.my_products:hover img{
+	   transform: scale(1.3);
+	       position: relative;
+         top: -20px;
+		transition:0.5s;
+		
+}
+footer{
+	    background: rgb(0 0 0);
+    z-index: 9999999999999999999999;
+    /* opacity: 24; */
+    position: relative;
+}
+.my_footer>ul>li>a{
+	color:white!important;
+}
+@media(max-width:1024px) {
+	.my_products>img{
+	height: 100%!important;
+   }
+}
+@media(max-width:1200px) {
+    .widgets {
+        display: none;
+    }
+
+	header{
+		position: fixed;
+    width: 100%;
+    z-index: 999999999999;
+	}
+	.my_list{
+		    display: block;
+    background: rgb(121 131 45 / 14%);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    margin: 0 auto;
+    right: 50px;
+    left: 0px;
+    
+    text-align: center;
+    backdrop-filter: blur(7px);
+    z-index: 99999999999;
+	}
+.my_products>img{
+	height: 82px;
+}
+    nav {
+		background: rgb(182 57 51);
+    position: fixed;
+    width: 100%;
+    z-index: 9999999999999;
+    top: 76px;
+    }
+    section {
+        padding: 286px 10px;
+    }
+    .col-md-3 {
+        width: 50%;
+        float: left;
+    }
+    .menu {
+        line-height: 6;
+        position: absolute;
+        top: 34px;
+        right: 32px;
+        width: 56%;
+        transform: rotate( -180deg);
+    }
+    .first {
+          border: 1px solid rgb(255 255 255);
+        width: 15%;
+        margin: 8px 0px;
+    }
+    .sec {
+           border: 1px solid rgb(255 255 255);
+        width: 10%;
+    }
+    .dis {
+        display: none!important;
+    }
+	.my_list>ul>li,.my_list>ul>li>a{
+	display: inline-flex;
+    list-style-type: none;
+    padding: 0px 13px;
+    color: rgb(255 255 255)!important;
+}
+	.my_list>ul>li>a>img{
+		width: 35px!important;
+        height: 29px;
+		z-index:99999999999999;
+	}
+
+}
